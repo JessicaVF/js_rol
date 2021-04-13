@@ -36,6 +36,15 @@ function combat(player) {
 
   btnAttack.addEventListener("click", function () {
     maitre.points = maitre.points - (player.arme - maitre.armure);
+    maitreStats.innerText = `Maitre - attaque: ${maitre.arme} | Maitre - défense: ${maitre.armure} | Maitre - points de vie: ${maitre.points}`;
+  });
+  btnRun.addEventListener("click", function () {
+    maitreStats.innerText = "";
+    playerStats.innerText = "Game over...couard ༼つಠ益ಠ༽つ ";
+    let btns = document.getElementsByTagName("button");
+    for (let i = 0; i < 2; i++) {
+      btns[0].remove();
+    }
   });
 }
 
