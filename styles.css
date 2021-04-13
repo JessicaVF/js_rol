@@ -1,0 +1,31 @@
+h1, form{
+    text-align: center;
+}
+#preparation form div{
+    padding-top: 10px;
+}
+#preparation form p{
+    color: red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+#castle{
+    position: relative;
+    left: 35%;
+}
+#player{
+    text-align: center;
+    padding: 20px;
+}
+#combat div{
+    position: relative;
+    animation: mymove 5s infinite;
+}
+#donJuan{
+    color: white;
+    
+}
+@keyframes mymove {
+    from {right:-110%;}
+    to {right: -40%;}
+  }

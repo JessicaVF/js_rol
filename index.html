@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Dungeons and Scripts</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -30,13 +30,76 @@
             <input type="radio" id="armureMagique" name="armure" value="5">
             <label for="Magique">Magique</label>
 
-            <div><input type="submit" id="ready" value="ready"></div>
-
+            <p> Et ton nom?</p>
+            <label for="fname"></label>
+            <input type="text" id="fname" name="fname" value="">
+            <div>
+                <input type="submit" id="ready" value="ready">
+            </div>
         </form>
+            <pre id="castle">
+                (   .                   _ _ _ _ _
+                (   .     .  .=##                      ]-I-I-I-[                    /
+              .=##   .  (      ( .                     \ `  ' /        \\\' ,      / //
+                ( .   .=##  .       .                   |'  []          \\\//    _/ //'
+              .     .   ( .    .        _----|          |.  '|           \_-//' /  //<'
+                                         ----|_----|    | ' .|             \ ///  >   \\\`
+                ]-I-I-I-I-[       ----|      |     |    |. ` |            /,)-^>>  _\`
+                 \ `   '_/            |     / \    |    | /^\|            (/   \\ / \\\
+                  []  `__|            ^    / ^ \   ^    | |*||                  //  //\\\
+                  |__   ,|           / \  / ^ ^`\ / \   | ===|                 ((`
+               ___| ___ ,|__        / ^  /=_=_=_=\ ^ \  |, `_|
+               I_I__I_I__I_I       (====(_________)_^___|____|____                 
+               \-\--|-|--/-/       |     I  [ ]__I I_I__|____I_I_|                     
+                |[] `    '|__   _  |_   _|`__  ._[  _-\--|-|--/-/                      
+               / \  [] ` .|  |-| |-| |-| |_| |_| |_| | []   [] |                
+              <===>    `  |.            .      .     |    '    |
+              ] []|  `    |   []    --   []      `   |   [] '  |
+              <===>.  `   |  .   '  .       '  .[]   | '       |             
+               \_/    .   |       .       '          |   `  [] |           
+                | []    . |   .  .           ,  .    | ,    .  |                   
+                |    . '  |       . []  '            |    []'  |
+               / \   ..   |  `      .    .     `[]   | -   `   |                     
+              <===>      .|=-=-=-=-=-=-=-=-=-=-=-=-=-|    .   / \                   
+              ] []|` ` [] |`  .  .   _________   .   |-      <===>            
+              <===>  `  ' | '   |||  |       |  |||  |  []   <===>                      
+               \_/     -- |   . |||  |       |  |||  | .  '   \_/                     
+              ./|' . . . .|. . .||||/|_______|\|||| /|. . . . .|\_
+
+            </pre>
+        
     </section>
     <section id="combat">
         <p id="player"></p>
         <p id="maitre"></p>
+        <div>
+        <pre id="donJuan"> 
+            /__ 
+            /_=. 
+            |\         ___
+            | ;   _.--/.=`
+            | |    '-s, )
+            | \   /`  g/
+             \ '. L_  /`
+              \  \_|  \__      o
+               \  - . -( '.  =.J.=
+                '|  |   .  '.__U 
+                 '-- '-- \-._  A
+                  \ :    /   '-N\
+                   (= =  |    <{/ _
+                    \' ;  \    | /_<
+                     :T    )    (/_
+                     \|   /  __.-' \
+                      |   |\'  .'`\ \
+                      |  /__.-'    "`
+                      |  (
+                       \  \
+                        \  ) ___
+                         \ |/.='
+                          \ \
+                         _/ /
+        </pre>
+    </div>
     </section>
     <script src="script.js"></script>
 </body>

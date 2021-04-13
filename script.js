@@ -1,3 +1,12 @@
+// TO DO:
+
+// - Capture name and use it in narrative
+// - Integrar el ataque de donJuan
+// - evitar caer en numeros negativos
+// - incluir ramdon en los ataques, para que varie el poder del ataque
+// - hacer branch con el viejo codigo
+// IMPORTANTE: Apague el autoformato de vs code para este code
+
 "use strict";
 let ready = document.getElementById("ready");
 ready.addEventListener("click", function (event) {
@@ -13,14 +22,15 @@ ready.addEventListener("click", function (event) {
   temp = document.querySelector('input[name="armure"]:checked');
   temp = temp.value;
   player.armure = temp;
-  console.log(player);
-  combat(player);
+  let fname = 
+  narration(fname);
+  // combat(player);
 });
 function combat(player) {
   let screen = document.getElementById("preparation");
   screen.innerHTML = "";
   let playerStats = document.getElementById("player");
-  playerStats.innerText = `Ton attaque: ${player.arme} | Ta défense: ${player.armure} | Tes points de vie: ${player.points}`;
+  playerStats.innerText = `Eustache ( ｀皿´)｡ﾐ/ |||Ton attaque: ${player.arme} | Ta défense: ${player.armure} | Tes points de vie: ${player.points}`;
 
   let maitre = { arme: 6, armure: 4, points: 10 };
   let maitreStats = document.getElementById("maitre");
@@ -38,6 +48,7 @@ function combat(player) {
     maitre.points = maitre.points - (player.arme - maitre.armure);
     maitreStats.innerText = `Maitre - attaque: ${maitre.arme} | Maitre - défense: ${maitre.armure} | Maitre - points de vie: ${maitre.points}`;
   });
+
   btnRun.addEventListener("click", function () {
     maitreStats.innerText = "";
     playerStats.innerText = "Game over...couard ༼つಠ益ಠ༽つ ";
@@ -47,7 +58,17 @@ function combat(player) {
     }
   });
 }
-
+function narration(fname) {
+  
+  let screen = document.getElementById("preparation");
+  screen.innerHTML = "";
+  let narrative = document.getElementById("player");
+  narrative.innerText = "Le Maitre du Donjon sort de l'ombre et il s'exclame : Qui ose venir defier le grand maître du donjon, le grand Don Juan !!?";
+  let donJuan = document.getElementById("donJuan");
+  donJuan.style.color ="black";
+  // let narrativeBis = document.getElementById("maitre");
+  // narrativeBis.innerText = `Tu commences à dire: "Je suis ${fname}..." mais...`;
+};
 // function combat(player) {
 //   let maitre = { arme: 6, armure: 4, points: 10 };
 //   alert("Quand tu arrives au donjon...");
